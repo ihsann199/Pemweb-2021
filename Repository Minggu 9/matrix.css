@@ -1,0 +1,58 @@
+body{ 
+    background: #35A9DB; 
+    font-family: roboto; 
+    text-align: center; 
+    } 
+    @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+      div:hover {
+        width: 300px;
+    }
+     
+h1,h2{ 
+    color: #fff; 
+} 
+.ketengah{ 
+    margin: 10px auto; 
+    width: 1150px; 
+} 
+.kotak1{ 
+    background: #fcfcfc; 
+    padding: 20px; 
+    float: left; 
+    margin: 50px; 
+    width: 150px; 
+    height: 150px; 
+    transition: width 2s;
+} 
+
+.kotak2{ 
+    background: #fcfcfc; 
+    padding: 20px; 
+    float: left; 
+    margin: 50px; 
+    width: 150px; 
+    height: 150px;
+    transform: rotateX(150deg);
+    transform: rotateY(150deg);
+    transform: rotateZ(150deg);
+    position: relative;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+    
+}
+/*-ms-transform-origin-x:(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); 
+    -ms-transform:matrix(1,2,-1,1,5,4);
+    -webkit-transform:matrix(1,2,-1,1,5,4); 
+    transform:matrix(1,2,-1,1,5,4);
